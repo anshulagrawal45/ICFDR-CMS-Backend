@@ -1,5 +1,7 @@
 const { UsersModel, MemberModel } = require("../Model");
 
+
+//controller to greet on birthdays.
 async function getWeeklyBirthdayUsers() {
   const currentDate = new Date();
   const currentDay = currentDate.getDate();

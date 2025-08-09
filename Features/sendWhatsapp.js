@@ -3,6 +3,9 @@ require("dotenv").config();
 // let CLIENT_ID = "390139244489-92v6mqj5oljo5a6iago8q8445eu35lpd.apps.googleusercontent.com"
 // let CLIENT_SECRET = "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"
 
+
+//controller to send whatsapp message to stakeholders
+
 exports.sendWhatsapp = (app) => {
   app.post("/sendWhatsapp", async (req, res) => {
     let { number, name, userid, password } = req.body;

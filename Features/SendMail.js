@@ -6,6 +6,8 @@ let CLIENT_ID = process.env.CLIENT_ID
 let CLIENT_SECRET = process.env.CLIENT_SECRET
 const nodemailer = require('nodemailer');
 const { UsersModel } = require('../Model');
+
+// controller to send mail to stakeholders using nodemailer
 exports.sendMail = (app) => {
     app.post("/sendMail", async (req, res) => {
         try {

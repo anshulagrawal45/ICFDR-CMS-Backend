@@ -1,5 +1,7 @@
 const { getWeeklyBirthdayMembers, getWeeklyBirthdayChildrens, getWeeklyAnniversaryMembers, getWeeklyBirthdayUsers } = require("./birthdayFunctions");
 
+
+// controller to get birthdays.
 exports.sendBirthdays = (app) => {
   app.get("/getBirthdays", async (req, res) => {
     try {
